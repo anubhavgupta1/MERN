@@ -3,6 +3,8 @@ const hostname = 'localhost';
 const port = 8000;
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
+const db = require('./config/mongoose');
+db();
 
 app.use(express.static(__dirname +'/assets'));
 app.use(expressLayouts);
