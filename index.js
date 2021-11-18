@@ -1,10 +1,10 @@
 const express = require('express');
-
 const hostname = 'localhost';
 const port = 8000;
 const app = express();
 
-
+app.set('view engine', 'ejs');
+app.set('views', './views');
 app.use('/', require('./routes/index'));
 
 
