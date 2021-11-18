@@ -1,0 +1,17 @@
+{
+  "name": "meow",
+  "version": "1.0.0",
+  "description": "A social media app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "Anubhav Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "mongoose-populate": "^3.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
