@@ -14,7 +14,6 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use('/', require('./routes/index'));
 
-
 //start the server
 app.listen(port,hostname, function(err)
 {
