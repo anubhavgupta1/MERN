@@ -10,15 +10,21 @@
           <li class="nav-item">
             <a class="nav-link active" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/users/sign-up">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/users/sign-in">Sign In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/users/profile">Profile</a>
-          </li>
+          <% if(locals.user){ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/sign-out">Sign Out</a>
+            </li>
+          <% }else{ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/sign-up">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/sign-in">Sign In</a>
+            </li>
+          <%}%>
         </ul>
       </div>
     </div>
